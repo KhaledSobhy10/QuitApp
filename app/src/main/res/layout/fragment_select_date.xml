@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SelectDateFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Select the date"
+        app:titleCentered="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:src="@drawable/ic_addiction_generic"
+        android:padding="10dp"
+        android:background="@drawable/ic_bg_quit_date"
+        app:layout_constraintBottom_toTopOf="@+id/last_date_label"
+        app:layout_constraintEnd_toEndOf="@+id/last_date_label"
+        app:layout_constraintStart_toStartOf="@+id/last_date_label"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+    <TextView
+        android:id="@+id/last_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/last_time_question"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/last_date_label"
+        app:layout_constraintStart_toStartOf="@+id/last_date_label"
+        app:layout_constraintTop_toBottomOf="@+id/last_date_label"
+        app:layout_constraintVertical_bias="0.0"
+        android:padding="12dp"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:textColor="@color/white"
+        tools:text="9 june,2020 10,20 am"
+        android:focusable="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

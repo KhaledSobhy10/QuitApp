@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_overview"
+        android:icon="@drawable/ic_calendar_period"
+        android:title="Overview"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/bottom_nav_motivation"
+        android:icon="@drawable/ic_motivation"
+        android:title="Motivation"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/bottom_nav_statistic"
+        android:icon="@drawable/ic_statistic"
+        android:title="Statistic"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/bottom_nav_trophies"
+        android:icon="@drawable/ic_trophies"
+        android:title="Trophies"
+        app:showAsAction="always"
+        />
+
+</menu>

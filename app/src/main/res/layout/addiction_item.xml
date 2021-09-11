@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/addiction_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/addiction_icon_iv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Facebook" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pop_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_menu_overflow_material"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/addiction_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:src="@drawable/ic_addiction_facebook"
+            app:layout_constraintBottom_toTopOf="@+id/arc_progress"
+            app:layout_constraintEnd_toEndOf="@+id/arc_progress"
+            app:layout_constraintStart_toStartOf="@+id/arc_progress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:text="Abstinence Time"
+            app:layout_constraintEnd_toEndOf="@+id/addiction_name_tv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addiction_name_tv" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="10dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/arc_progress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_label_tv" />
+
+        <TextView
+            android:id="@+id/target_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            tool:text="24 HOURS"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/arc_progress"
+            app:layout_constraintEnd_toEndOf="@+id/arc_progress"
+            app:layout_constraintStart_toStartOf="@+id/arc_progress"
+            app:layout_constraintTop_toTopOf="@+id/arc_progress"
+            app:layout_constraintVertical_bias="0.92" />
+
+        <com.example.quit.utilities.TestMyArch
+            android:id="@+id/arc_progress"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            app:arc_angle="250"
+            app:arc_finished_color="@color/red"
+            app:arc_max="100"
+            app:arc_progress="10"
+            app:arc_stroke_width="10dp"
+            app:arc_suffix_text_size="16sp"
+            app:arc_text_color="@color/red"
+            app:arc_text_size="30sp"
+            app:arc_unfinished_color="#ADC9C8C8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addiction_name_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

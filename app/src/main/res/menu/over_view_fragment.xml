@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_24h"
+        android:title="24 hour" />
+    <item
+        android:id="@+id/action_3days"
+        android:title="3 days" />
+    <item
+        android:id="@+id/action_1week"
+        android:title="1 week" />
+    <item
+        android:id="@+id/action_10days"
+        android:title="10 days" />
+    <item
+        android:id="@+id/action_2weeks"
+        android:title="2 weeks" />
+    <item
+        android:id="@+id/action_1month"
+        android:title="1 month" />
+    <item
+        android:id="@+id/action_3months"
+        android:title="3 months" />
+    <item
+        android:id="@+id/action_6months"
+        android:title="6 months" />
+
+
+    <item
+        android:id="@+id/action_1year"
+        android:title="1 year" />
+
+    <item
+        android:id="@+id/action_5years"
+        android:title="5 year" />
+
+
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.fragments.SetNameAndIconFragment"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Name and icon"
+        app:titleCentered="true" />
+
+
+    <TextView
+
+        android:id="@+id/select_icon_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Select the icon"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbar"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <ImageButton
+        android:id="@+id/warning_ib"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_target"
+        app:layout_constraintEnd_toEndOf="@+id/select_icon_label"
+        app:layout_constraintStart_toStartOf="@+id/select_icon_label"
+        app:layout_constraintTop_toBottomOf="@+id/select_icon_label" />
+
+    <ImageView
+        android:id="@+id/addiction_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_addiction_generic"
+        app:layout_constraintBottom_toBottomOf="@+id/warning_ib"
+        app:layout_constraintEnd_toEndOf="@+id/warning_ib"
+        app:layout_constraintStart_toStartOf="@+id/warning_ib"
+        app:layout_constraintTop_toTopOf="@+id/warning_ib" />
+
+    <TextView
+        android:id="@+id/what_addiction_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="what addiction name ?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/warning_ib"
+        app:layout_constraintStart_toStartOf="@+id/warning_ib"
+        app:layout_constraintTop_toBottomOf="@+id/warning_ib" />
+
+    <EditText
+        android:id="@+id/addiction_name_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:cursorVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/what_addiction_name_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/what_addiction_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/what_addiction_name_label"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

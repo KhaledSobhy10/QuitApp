@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background_color"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sheet_bottom_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="All entries on this day"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/entries_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        tools:itemCount="10"
+        tools:listitem="@layout/entry_item"
+        android:nestedScrollingEnabled="false"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_entry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="ADD ENTRY"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        android:backgroundTint="@color/red"
+
+        />
+</LinearLayout>

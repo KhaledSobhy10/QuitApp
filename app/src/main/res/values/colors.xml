@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#5F5E5E</color>
+    <color name="light_gray">#B7B4B4</color>
+    <color name="details_background">@color/app_background_color</color>
+    <color name="app_background_color">#EBEDF0</color>
+    <!--    test color-->
+    <color name="purple">#ff9c27b0</color>
+    <color name="red">#ffff4861</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="shield_leaf_inner">#ff64ffda</color>
+    <color name="shield_leaf_outer">#ff41b555</color>
+    <color name="shield_left">#ff25a69a</color>
+    <color name="shield_right">#ff04897b</color>
+    <color name="shield_title">#fffec40d</color>
+    <!--Not achieved-->
+        <color name="shield_leaf_inner_black">@color/light_gray</color>
+        <color name="shield_leaf_outer_black">@color/light_gray</color>
+        <color name="shield_left_black">#858383</color>
+        <color name="shield_right_black">#7B7A7A</color>
+        <color name="shield_title_black">@color/light_gray</color>
+    <!--  -->
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+    <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="teal">#ff009688</color>
+    <color name="textColorHint_Dark">#80ffffff</color>
+    <color name="textColorHint_Light">#61000000</color>
+    <color name="textColorPrimary_Dark">#ffffffff</color>
+    <color name="textColorPrimary_Light">#de000000</color>
+    <color name="textColorSecondary_Dark">#b3ffffff</color>
+    <color name="textColorSecondary_Light">#ba000000</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="yellow">#ffffc107</color>
+    <color name="chain_day">#EBEDF0</color>
+
+</resources>
